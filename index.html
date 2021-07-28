@@ -258,10 +258,11 @@
                   </div>
                   <div class="s-12 m-12 l-5">
                     <h3>Contato</h3>
-                    <form class="customform" action="">
-                      <div class="s-12"><input name="" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
-                      <div class="s-12"><input name="" placeholder="Your name" title="Your name" type="text" /></div>
-                      <div class="s-12"><textarea placeholder="Your message" name="" rows="5"></textarea></div>
+                    <form class="customform" action="sendEmail.php" method="POST">
+                      <div class="s-12"><input name="email" placeholder="E-mail" title="Your e-mail" type="text" /></div>
+                      <div class="s-12"><input name="nome" placeholder="Nome" title="Your name" type="text" /></div>
+                      <div class="s-12"><input name="telefone" placeholder="Celular" title="Your name" type="number"  /></div>
+                      <div class="s-12"><textarea placeholder="Mensagem" name="mensagem" rows="5"></textarea></div>
                       <div class="s-12 m-12 l-4"><button class="color-btn" type="submit">Submit Button</button></div>
                     </form>
                   </div>                
