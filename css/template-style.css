@@ -30,8 +30,8 @@ a.color-btn, form.customform button.color-btn {
 	-webkit-transition: all 0.20s linear 0s;
 }
 a.color-btn:hover, form.customform button.color-btn:hover {
-	border: 1px solid #92c500;
-	color: #92c500;
+	border: 1px solid #9f1c20;
+	color: #9f1c20;
 }
 #topbar {
 	background: none repeat scroll 0 0 #012232;
@@ -59,7 +59,7 @@ a.color-btn:hover, form.customform button.color-btn:hover {
 	-webkit-transition: all 0.20s linear 0s;
 }
 #topbar i:hover {
-	color: #92c500;
+	color: #9f1c20;
 	cursor: pointer;
 	opacity: 1;
 }
@@ -102,8 +102,8 @@ position: static;
 }
 .top-nav li a:hover, .top-nav li.active-item a {
 	background: none repeat scroll 0 0 #00283a;
-	border-top: 2px solid #92c500;
-	color: #92c500;
+	border-top: 2px solid #9f1c20;
+	color: #9f1c20;
 	position: relative;
 }
 #carousel .text {
@@ -160,7 +160,7 @@ position: static;
 	width: 18px;
 }
 .owl-carousel.owl-theme .owl-dot.active span, .owl-carousel.owl-theme .owl-dot:hover span {
-	background: none repeat scroll 0 0 #92c500;
+	background: none repeat scroll 0 0 #9f1c20;
 }
 #first-block {
 	background: none repeat scroll 0 0 #00283a;
@@ -186,7 +186,7 @@ position: static;
 	z-index: 2;
 }
 #features i {
-	background: none repeat scroll 0 0 #92c500;
+	background: none repeat scroll 0 0 #9f1c20;
 	border-radius: 100px;
 	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3) inset;
 	color: #fff;
@@ -271,9 +271,9 @@ article ul li:before {
 	width: 20px;
 }
 .about-us-icons i {
-	border: 2px solid #92c500;
+	border: 2px solid #9f1c20;
 	border-radius: 100px;
-	color: #92c500;
+	color: #9f1c20;
 	display: block;
 	float: left;
 	font-size: 1.6em;
@@ -368,11 +368,11 @@ a.tab-label, a.tab-label:link, a.tab-label:visited {
 	-webkit-transition: all 0.20s linear 0s;
 }
 a.tab-label:hover, a.tab-label.active-btn {
-	background: #92c500;
+	background: #9f1c20;
 	color: #fff;
 }
 #services {
-	background: #6f9600 none repeat scroll 0 0;
+	background: #00283a  none repeat scroll 0 0;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 	padding: 6em 2em;
 }
@@ -386,7 +386,7 @@ a.tab-label:hover, a.tab-label.active-btn {
 #services i {
 	background: none repeat scroll 0 0 #fff;
 	border-radius: 80px;
-	color: #6f9600;
+	color: #00283a ;
 	display: block;
 	float: left;
 	font-size: 1.8em;
@@ -418,7 +418,7 @@ a.tab-label:hover, a.tab-label.active-btn {
 	z-index: 3;
 }
 .news-date {
-	background: #6f9600 none repeat scroll 0 0;
+	background: #00283a  none repeat scroll 0 0;
 	clear: both;
 	color: #fff;
 	display: block;
@@ -466,7 +466,7 @@ form.customform button.color-btn {
 	margin: 0 0 1.25em;
 }
 #contact h3 {
-	color: #92c500;
+	color: #9f1c20;
 	font-size: 1em;
 	font-weight: 700;
 	margin: 0 0 0.625em;
