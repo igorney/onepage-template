@@ -419,14 +419,7 @@ a.tab-label:hover, a.tab-label.active-btn {
 }
 .news-date {
 	background: #00283a  none repeat scroll 0 0;
-	clear: both;
-	color: #fff;
-	display: block;
-	float: none;
-	height: 130px;
-	padding: 0.625em 0;
-	text-align: center;
-	width: 100%;
+	padding: 10px;
 }
 .day {
 	font-size: 2.5em;
