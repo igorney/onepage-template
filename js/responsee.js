@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
   });  
   //Responsee nav
   // Add nav-text before top-nav
-  $('.top-nav').before('<p class="nav-text"><span></span></p>');   
+  $('.top-nav').before('<p class="nav-text hide-s"><span></span></p>');   
   $('.top-nav > ul > li ul').each(function(index, element) {
     var count = $(element).find('li').length;
     var content = '<span class="count-number"> ' + count + '</span>';
