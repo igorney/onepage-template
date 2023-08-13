@@ -18,13 +18,15 @@
    <script type="text/javascript" src="js/template-scripts.js"></script>
    <link rel="shortcut icon" href="img/image.png" />
    <title>Tradição Elevadores - Manutenção e Instalação de Elevadores</title>
+   <script type="text/javascript">
+      function habilitarDiv(text) {
+         var div = document.getElementById(text);
+         div.style.display == "block" ? div.style.display = "none" : div.style.display = "block";
+      }
+   </script>
 </head>
 
 <body class="size-1140">
-   <!-- PREMIUM FEATURES BUTTON -->
-   <a target="_blank" class="hide-s icon" href="https://api.whatsapp.com/send?phone=5511950608631"
-      style="position:fixed;bottom:10px;right:-14px;z-index:10;"><img src="img/WhatsApp-icone.png"
-         alt="contato tradição elevadores"></a>
    <!-- TOP NAV WITH LOGO -->
    <header>
       <nav>
@@ -38,7 +40,7 @@
                   <li><a href="#features">Serviços</a></li>
                   <li><a href="#about-us">Sobre nós</a></li>
                   <li><a href="#our-work">Trabalhos</a></li>
-                   <!-- <li><a href="#latest-news">Clientes</a></li> -->
+                  <!-- <li><a href="#latest-news">Clientes</a></li> -->
                   <li><a href="#contact">Contato</a></li>
                </ul>
             </div>
@@ -68,17 +70,52 @@
                <div class="s-12 m-4 l-4 margin-bottom">
                   <img src="img/manutencao.jpg" alt="manutencao" />
                   <h2>MANUTENÇÃO E CONSERVAÇÃO</h2>
-                  <div class="s-12 m-10 l-10 center"><a target="_blank" class="black-btn" href="./manutencao.html">Saiba Mais</a></div>
+                  <div class="s-12 m-10 l-10 center"><a class="black-btn" onclick="habilitarDiv('manutencao')">Saiba
+                        Mais</a></div>
+                  <div id="manutencao" style="display: none">
+                     <p> Quando se trata de garantir acessibilidade o bom funcionamento do equipamento é essencial.
+                        Desse modo, a Tradição Elevadores conta com uma frente de manutenção preventiva que se baseia na
+                        visita de técnicos ao espaço mensalmente para examinar os equipamentos, com base nessa
+                        observação pode ser determinado reparos e solução eventuais problemas a fim de garantir
+                        segurança aos usuários.
+                     </p>
+                  </div>
                </div>
                <div class="s-12 m-4 l-4 margin-bottom">
                   <img src="img/modernizacao.jpg" alt="modernizacao" />
                   <h2>MODERNIZAÇÃO ESTÉTICA E TECNOLÓGICA</h2>
-                  <div class="s-12 m-10 l-10 center"><a target="_blank" class="black-btn" href="./modernizacao.html">Saiba Mais</a></div>
+                  <div class="s-12 m-10 l-10 center"><a class="black-btn" onclick="habilitarDiv('modernizacao')">Saiba Mais</a></div>
+                  <div id="modernizacao" style="display: none">
+                     <p>
+                        A modernização dos elevadores garante não só um reparo estético, já que por vezes os usuários
+                        tendem a
+                        não se sentir confortáveis na cabine, como também uma manutenção tecnológica com objetivo de
+                        melhorar
+                        equipamentos que se tornaram obsoletos.
+                        A manutenção tecnológica visa a troca de quadro de comando, a máquina de tração, o motor, os
+                        cabos de
+                        sustentação, a cabina, o totem (botoeira) da cabina, os indicadores de posição e outros
+                        elementos a
+                        depender da necessidade.
+                        A modernização estética visa tornar o elevador mais agradável e silencioso, sem solavancos,
+                        formação de
+                        degraus ou outras ocorrências
+                     </p>
+                  </div>
                </div>
                <div class="s-12 m-4 l-4 margin-bottom">
                   <img src="img/orcamento.jpg" alt="orcamento" />
                   <h2>CONTRATO E ORÇAMENTO</h2>
-                  <div class="s-12 m-10 l-10 center"><a target="_blank" class="black-btn" href="./vistoria.html">Saiba Mais</a></div>
+                  <div class="s-12 m-10 l-10 center"><a class="black-btn" onclick="habilitarDiv('vistoria')">Saiba Mais</a></div>
+                  <div id="vistoria" style="display: none">
+                     <p>
+                        O contrato de manutenção garante a integral responsabilidade da conservadora pelo equipamento, salvo
+                        restritas hipóteses de mau uso, vandalismo ou força maior. Esse pode ser realizado através de um
+                        orçamento que implicará uma vistoria ao equipamento para identificar as necessidades que devem ser
+                        garantidas. O contrato pode ser realizado com o fornecimento de peças ou sem. A vistoria determinará o
+                        estado atual do equipamento e os investimentos financeiros que serão necessários.
+                    </p>
+                  </div>
                </div>
             </div>
          </div>
