@@ -337,11 +337,11 @@
                </div>
                <div class="s-12 m-12 l-5">
                   <h3>Contato</h3>
-                  <form class="customform" method="POST" action="form.php">
-                     <div class="s-12"><input name="email" placeholder="E-mail" title="Your e-mail" type="text"></div>
-                     <div class="s-12"><input name="name" placeholder="Nome completo" title="Your name" type="text"></div>
-                     <div class="s-12"><textarea placeholder="Mensagem" name="message" rows="5"></textarea></div>
-                     <div class="s-12 m-12 l-4"><button class="color-btn" type="submit">Enviar</button></div>
+                  <form class="customform" id="contact-form">
+                      <div class="s-12"><input id="email" name="email" placeholder="E-mail" title="Your e-mail" type="text"></div>
+                      <div class="s-12"><input id="name" name="name" placeholder="Nome completo" title="Your name" type="text"></div>
+                      <div class="s-12"><textarea placeholder="Mensagem" id="message" name="message" rows="5"></textarea></div>
+                      <div class="s-12 m-12 l-4"><button class="color-btn" type="submit">Enviar</button></div>
                   </form>
                </div>
                <div class="s-12 m-12 l-12">
@@ -438,15 +438,15 @@
    <script>
       document.addEventListener('DOMContentLoaded', function () {
           const form = document.getElementById('contact-form');
-      
+  
           form.addEventListener('submit', function (e) {
               e.preventDefault(); // Evita o comportamento padrão de envio do formulário
-      
+  
               // Obtenha os valores dos campos do formulário
               const email = document.getElementById('email').value;
               const name = document.getElementById('name').value;
               const message = document.getElementById('message').value;
-      
+  
               // Enviar os dados do formulário para o PHP usando Fetch
               fetch('form.php', {
                   method: 'POST',
@@ -472,7 +472,7 @@
               });
           });
       });
-      </script>
+  </script>
       
 </body>
 
