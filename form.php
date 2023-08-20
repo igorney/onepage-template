@@ -1,4 +1,6 @@
 <?php
+$response = array();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $name = $_POST["name"];
@@ -13,12 +15,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Envie o email
     if (mail($to, $subject, $message, $headers)) {
         // Email enviado com sucesso
-        echo "O email foi enviado com sucesso!";
+        $response['status'] = 'success';
+        $response['message'] = 'O email foi enviado com sucesso!';
     } else {
         // Erro ao enviar o email
-        echo "Houve um erro ao enviar o email. Por favor, tente novamente.";
+        $response['status'] = 'error';
+        $response['message'] = 'Houve um erro ao enviar o email. Por favor, tente novamente.';
     }
 } else {
-    // O formulário não foi submetido, redirecione ou lide com isso de acordo com suas necessidades.
+    // O formulário não foi submetido, lide com isso de acordo com suas necessidades.
+    $response['status'] = 'error';
+    $response['message'] = 'Requisição inválida.';
 }
+
+echo json_encode($response);
 ?>
